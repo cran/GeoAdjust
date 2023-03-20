@@ -2,7 +2,7 @@ Package: GeoAdjust
 Type: Package
 Title: Accounting for Random Displacements of True GPS Coordinates of
         Data
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(person(given = "Umut", family = "Altay", email= "altayumut.ua@gmail.com", role = c("cre","aut")),
              person(given = "John", family = "Paige", email = "john.paige@ntnu.no", role = "aut"),
              person(given = "Geir-Arne", family = "Fuglstad", email = "geir-arne.fuglstad@ntnu.no", role = "aut"),
@@ -27,11 +27,11 @@ Imports: raster, sp, stats, rgeos, SUMMER, Matrix, ggplot2, fields,
         geosphere, TMB
 Additional_repositories: https://inla.r-inla-download.org/R/stable/
 NeedsCompilation: yes
-Packaged: 2023-03-11 00:34:29 UTC; umuta
+Packaged: 2023-03-20 18:47:15 UTC; umuta
 Author: Umut Altay [cre, aut],
   John Paige [aut],
   Geir-Arne Fuglstad [aut],
   Andrea Riebler [aut]
 Maintainer: Umut Altay <altayumut.ua@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-03-13 14:10:06 UTC
+Date/Publication: 2023-03-20 19:30:07 UTC
