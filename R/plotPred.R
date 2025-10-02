@@ -90,7 +90,7 @@ plotPred = function(pred = NULL, predRaster = NULL, admin0 = NULL, admin1 = NULL
                    panel.grid.minor.y = ggplot2::element_blank()) +
     ggplot2::theme(legend.text=ggplot2::element_text(size=35))+
     ggplot2::scale_fill_viridis_c(option = "viridis", begin = 0.2, end = 1, limits = c(min(val, na.rm=T), max(val, na.rm=T)), na.value="white") +#ggplot2::geom_point(data = locObs, color = "red", size=0.001, shape="plus")+
-    ggplot2::guides(fill = ggplot2::guide_colourbar(barwidth = 2.5, barheight = 25, title = ggplot2::labs("pred."), title.vjust=3) ) +
+    ggplot2::guides(fill = ggplot2::guide_colourbar(barwidth = 2.5, barheight = 25, title = "pred.", title.vjust=3) ) +
     ggplot2::scale_x_continuous(expand=c(0,0)) + ggplot2::scale_y_continuous(expand=c(0,0))
 
 
@@ -116,7 +116,7 @@ plotPred = function(pred = NULL, predRaster = NULL, admin0 = NULL, admin1 = NULL
                    panel.grid.minor.y = ggplot2::element_blank()) +
     ggplot2::theme(legend.text=ggplot2::element_text(size=35))+
     ggplot2::scale_fill_viridis_c(option = "viridis", begin = 0.2, end = 1, limits = c(min(val), max(val)), na.value="white") +#ggplot2::geom_point(data = locObs, color = "red", size=0.001, shape="plus")+
-    ggplot2::guides(fill = ggplot2::guide_colourbar(barwidth = 2.5, barheight = 25, title = ggplot2::labs("cv (%)"), title.vjust=3) ) +
+    ggplot2::guides(fill = ggplot2::guide_colourbar(barwidth = 2.5, barheight = 25, title = "cv (%)", title.vjust=3) ) +
     ggplot2::scale_x_continuous(expand=c(0,0)) + ggplot2::scale_y_continuous(expand=c(0,0))
 
   return(list(ggPred = ggPred, ggUncertainty = ggUncertainty))
